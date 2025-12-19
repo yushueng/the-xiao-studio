@@ -49,7 +49,7 @@ export default function Navbar() {
             <div className="flex h-10 w-10 items-center justify-center rounded-full border border-[#3A3A3A] sm:h-12 sm:w-12">
               <span
                 className={`${playfair.className} text-lg font-semibold text-[#3A3A3A]`}>
-                X
+                TXS
               </span>
             </div>
             <span className="hidden text-xs tracking-[0.22em] text-[#3A3A3A] sm:inline-block">
