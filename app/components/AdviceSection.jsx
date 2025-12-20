@@ -1,103 +1,103 @@
 export default function AdviceSection() {
   return (
-    <div className="relative h-400 w-full md:h-screen">
-      {/* Immagine per desktop */}
-      <img
-        src="/advicesection.jpg"
-        alt="Hero desktop"
-        className="w-full h-full object-cover relative z-0"
-      />
-
-      <div className="absolute inset-0 bg-black opacity-50 md:opacity-50 z-10"></div>
-
-      {/* SEZIONE HERO TESTO */}
-      <div className="absolute inset-0 mt-15 md:mt-0 mx-8 md:top-15 md:left-10 z-40">
-        <div>
-          <h1 className="text-white text-4xl md:text-7xl">
-            Sessioni su misura per <br className="hidden md:block" />
-            ogni livello
-          </h1>
-        </div>
-        <div className="max-w-xl md:max-w-2xl mt-7 z-30">
-          <p className="text-gray-200 text-base md:text-lg z-20">
+    <section
+      id="benefici"
+      className="scroll-mt-30 lg:scroll-mt-50 w-full bg-[#F5F1ED] lg:py-10">
+      <div className="mx-auto flex max-w-6xl flex-col gap-10 px-4 sm:px-6 lg:px-8">
+        {/* HEADER */}
+        <div className="grid gap-6 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] lg:items-center">
+          <div className="space-y-4">
+            <p className="text-[11px] tracking-[0.22em] text-[#8B7355] uppercase">
+              Sessioni su misura
+            </p>
+            <h2 className="text-2xl font-semibold tracking-[0.12em] text-[#3A3A3A] sm:text-3xl uppercase">
+              Sessioni su misura per ogni livello
+            </h2>
+          </div>
+          <p className="text-sm leading-relaxed text-[#3A3A3A]/85">
             Che tu sia alle prime armi o con anni di pratica alle spalle,
-            troverai la lezione adatta a te. Ogni lezione è pensata per guidarti
-            passo dopo passo, rispettando i tuoi tempi e le tue esigenze.{" "}
+            troverai la lezione adatta a te. Ogni pratica è pensata per guidarti
+            passo dopo passo, rispettando i tuoi tempi, il tuo corpo e le tue
+            esigenze.
           </p>
         </div>
-      </div>
-      {/* CONTENITORE CARD */}
 
-      <div className="w-full flex flex-col md:flex md:flex-row justify-center md:px-8 items-center gap-10 absolute bottom-15 z-30">
-        {/* CARD 1 */}
-        <div className="bg-white w-90 h-65 rounded-xl flex flex-col justify-between items-start  p-4">
-          <img
-            src="/yoga.svg"
-            alt="Logo Yoga"
-            className="w-auto mx-auto h-18"
-          />
-          <div>
-            <h1 className="text-3xl md:text-2xl">
-              Yoga ovunque, in ogni momento
-            </h1>
-            <p className="text-base md:text-sm text-gray-800 mt-2">
-              Crea il tuo momento di pace, ovunque ti trovi: a casa, al parco o
-              in viaggio.
-            </p>
+        {/* CARDS */}
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          {/* CARD 1 */}
+          <div className="flex h-full flex-col justify-between items-center rounded-2xl bg-[#F3E8DE] p-4 shadow-[0_10px_25px_rgba(0,0,0,0.06)]">
+            <img
+              src="/yoga.svg"
+              alt="Yoga ovunque, in ogni momento"
+              className="mb-3 h-12 w-18"
+            />
+            <div className="space-y-2">
+              <h3 className="text-base font-semibold text-[#3A3A3A]">
+                Yoga ovunque, in ogni momento
+              </h3>
+              <p className="text-sm leading-relaxed text-[#3A3A3A]/85">
+                Crea il tuo momento di pace ovunque ti trovi: a casa, al parco o
+                in viaggio, con pratiche adattabili al tuo spazio.
+              </p>
+            </div>
           </div>
-        </div>
-        {/* CARD 2 */}
-        <div className="bg-white w-90 h-65 rounded-xl flex flex-col justify-between items-start  p-4">
-          <img
-            src="/yoga1.svg"
-            alt="Logo Yoga"
-            className="w-auto mx-auto h-18"
-          />
-          <div>
-            <h1 className="text-3xl md:text-2xl ">
-              Pochi Minuti, Grandi Benefici
-            </h1>
-            <p className="text-base md:text-sm text-gray-800 mt-2">
-              Solo 10 minuti possono cambiarti la giornata. Ritrova il tuo
-              benessere.
-            </p>
+
+          {/* CARD 2 */}
+          <div className="flex h-full flex-col justify-between rounded-2xl bg-[#F3E8DE] p-4 shadow-[0_10px_25px_rgba(0,0,0,0.06)]">
+            <img
+              src="/yoga1.svg"
+              alt="Pochi minuti, grandi benefici"
+              className="mb-3 h-12 w-auto"
+            />
+            <div className="space-y-2">
+              <h3 className="text-base font-semibold text-[#3A3A3A]">
+                Pochi minuti, grandi benefici
+              </h3>
+              <p className="text-sm leading-relaxed text-[#3A3A3A]/85">
+                Solo 10 minuti possono cambiare il tuo umore e il tuo livello di
+                energia, aiutandoti a ritrovare centratura nel quotidiano.
+              </p>
+            </div>
           </div>
-        </div>
-        {/* CARD 3 */}
-        <div className="bg-white w-90 h-65 rounded-xl flex flex-col justify-between items-start  p-4">
-          <img
-            src="/yoga2.svg"
-            alt="Logo Yoga"
-            className="w-auto mx-auto h-18"
-          />
-          <div>
-            <h1 className="text-3xl md:text-2xl ">
-              Forza, Equilibrio e Flessibilità
-            </h1>
-            <p className="text-base md:text-sm text-gray-800 mt-2">
-              Sequenze pensate per potenziare i muscoli e migliorare
-              l'elasticità
-            </p>
+
+          {/* CARD 3 */}
+          <div className="flex h-full flex-col justify-between rounded-2xl bg-[#F3E8DE] p-4 shadow-[0_10px_25px_rgba(0,0,0,0.06)]">
+            <img
+              src="/yoga2.svg"
+              alt="Forza, equilibrio e flessibilità"
+              className="mb-3 h-12 w-auto"
+            />
+            <div className="space-y-2">
+              <h3 className="text-base font-semibold text-[#3A3A3A]">
+                Forza, equilibrio e flessibilità
+              </h3>
+              <p className="text-sm leading-relaxed text-[#3A3A3A]/85">
+                Sequenze create per potenziare i muscoli, migliorare
+                l’elasticità e sostenere postura ed equilibrio nel tempo.
+              </p>
+            </div>
           </div>
-        </div>
-        {/* CARD 4 */}
-        <div className="bg-white w-90 h-65 rounded-xl flex flex-col justify-between items-start  p-4">
-          <img
-            src="/yoga3.svg"
-            alt="Logo Yoga"
-            className="w-auto mx-auto h-18"
-          />
-          <div>
-            <h1 className="text-3xl md:text-2xl ">
-              Insegnante Esperta con anni di Esperienza
-            </h1>
-            <p className="text-base md:text-sm text-gray-800 mt-2">
-              Lezioni guidate da un'insegnante certificata, con esperienza e
-              passione.
-            </p>
+
+          {/* CARD 4 */}
+          <div className="flex h-full flex-col justify-between rounded-2xl bg-[#F3E8DE] p-4 shadow-[0_10px_25px_rgba(0,0,0,0.06)]">
+            <img
+              src="/yoga3.svg"
+              alt="Insegnante esperta"
+              className="mb-3 h-12 w-auto"
+            />
+            <div className="space-y-2">
+              <h3 className="text-base font-semibold text-[#3A3A3A]">
+                Insegnante esperta e presente
+              </h3>
+              <p className="text-sm leading-relaxed text-[#3A3A3A]/85">
+                Lezioni guidate da un’insegnante certificata, con esperienza in
+                percorsi individuali e piccoli gruppi, sempre attenta alle tue
+                esigenze.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

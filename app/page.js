@@ -1,16 +1,23 @@
-import Navbar from "./components/NavbarHero.jsx";
+import NavbarHero from "./components/NavbarHero.jsx";
 import CardSection from "./components/CardSection.jsx";
 import AdviceSection from "./components/AdviceSection.jsx";
-import Footer from "./components/Footer.jsx";
+
 import AboutMe from "./components/AboutMe.jsx";
+import WhatsappInviteSection from "./components/WhatsappInviteSection.jsx";
+import SectionDivider from "./components/SectionDivider.jsx";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <NavbarHero />
+      <SectionDivider />
       <AboutMe />
+      <SectionDivider />
       <CardSection />
+      <SectionDivider />
       <AdviceSection />
+      <SectionDivider />
+      <WhatsappInviteSection />
     </>
   );
 }

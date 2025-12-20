@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <div className="relative w-full bg-[#F5F1ED] text-[#3A3A3A] lg:pt-10">
       {/* HERO */}
-      <main className="mx-auto max-w-6xl px-4 pb-16 pt-24 sm:px-6 sm:pt-28 lg:px-8 lg:pt-32">
+      <main className="mx-auto max-w-6xl px-4 pt-24 sm:px-6 sm:pt-28 lg:px-8 lg:pt-32">
         <section
           id="home"
           className="scroll-mt-44 grid gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:items-center">

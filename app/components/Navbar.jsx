@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Playfair_Display } from "next/font/google";
+import Link from "next/link";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -12,11 +13,13 @@ const playfair = Playfair_Display({
 const navLinks = [
   { href: "/#home", label: "HOME" },
   { href: "/la-mia-storia", label: "ABOUT ME" },
-  { href: "/#philosophy", label: "PHILOSOPHY" },
-  { href: "/#benefits", label: "BENEFICI" },
-  { href: "/#lessons", label: "LEZIONI" },
-  { href: "/#contact", label: "CONTATTI" },
+  { href: "/#il-tuo-viaggio", label: "IL TUO VIAGGIO" },
+  { href: "/#benefici", label: "BENEFICI" },
+  { href: "/#contatti", label: "CONTATTAMI" },
 ];
+
+const whatsappNumber = "3332858687";
+const whatsappLink = `https://wa.me/39${whatsappNumber}`;
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -44,19 +47,20 @@ export default function Navbar() {
             : "bg-transparent"
         }`}
         aria-label="Main navigation">
-        <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:h-20 sm:px-6 lg:h-20 lg:px-8">
-          <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full border border-[#3A3A3A] sm:h-12 sm:w-12">
-              <span
-                className={`${playfair.className} text-lg font-semibold text-[#3A3A3A]`}>
-                TXS
-              </span>
-            </div>
-            <span className="hidden text-xs tracking-[0.22em] text-[#3A3A3A] sm:inline-block">
-              THE XIAO STUDIO
-            </span>
-          </div>
+        <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-4 sm:h-20 sm:px-6 lg:h-22 lg:px-8">
+          {/* LOGO CLICKABLE */}
+          <Link
+            href="/"
+            className="flex items-center gap-3"
+            aria-label="Torna alla home The Xiao Studio">
+            <img
+              src="/thexiaostudio.png"
+              alt="The Xiao Studio"
+              className="h-30 w-auto sm:h-40"
+            />
+          </Link>
 
+          {/* NAV DESKTOP */}
           <ul className="pointer-events-auto absolute left-1/2 hidden -translate-x-1/2 items-center space-x-6 text-[11px] tracking-[0.14em] text-[#3A3A3A] md:flex">
             {navLinks.map((link) => (
               <li key={link.href}>
@@ -69,14 +73,18 @@ export default function Navbar() {
             ))}
           </ul>
 
+          {/* CTA DESKTOP -> WHATSAPP */}
           <div className="hidden md:block">
             <a
-              href="/#contact"
+              href={whatsappLink}
+              target="_blank"
+              rel="noreferrer"
               className="border border-[#3A3A3A] px-4 py-2 text-[11px] font-medium uppercase tracking-[0.16em] text-[#3A3A3A] transition-all hover:bg-[#3A3A3A] hover:text-white">
               Join me on the mat
             </a>
           </div>
 
+          {/* HAMBURGER */}
           <button
             onClick={() => setMenuOpen((v) => !v)}
             className="relative flex h-10 w-10 flex-col items-center justify-center space-y-1.5 md:hidden"
@@ -125,8 +133,12 @@ export default function Navbar() {
                 </a>
               ))}
             </nav>
+
+            {/* CTA MOBILE -> WHATSAPP */}
             <a
-              href="/#contact"
+              href={whatsappLink}
+              target="_blank"
+              rel="noreferrer"
               onClick={() => setMenuOpen(false)}
               className="mt-4 w-full rounded-lg bg-[#3A3A3A] px-4 py-2.5 text-center text-xs font-medium uppercase tracking-[0.16em] text-white transition-colors hover:bg-[#8B7355]">
               Join me on the mat

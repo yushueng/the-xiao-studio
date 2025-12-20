@@ -23,12 +23,14 @@ export default function Footer() {
           {/* link di navigazione legali */}
           <div className="flex flex-col gap-2 text-xs sm:flex-row sm:gap-4">
             <a
-              href="/privacy"
+              href="/privacy-policy"
               className="transition-colors hover:text-[#8B7355]">
-              Privacy policy
+              Privacy Policy
             </a>
-            <a href="/terms" className="transition-colors hover:text-[#8B7355]">
-              Termini di servizio
+            <a
+              href="/cookie-policy"
+              className="transition-colors hover:text-[#8B7355]">
+              Cookie Policy
             </a>
             <a
               href="mailto:info@thexiaostudio.com"

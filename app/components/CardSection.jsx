@@ -1,11 +1,13 @@
 export default function CardSection() {
   return (
-    <section className="relative w-full overflow-x-hidden bg-[#F5F0EC] py-16 sm:py-20 lg:py-24">
+    <section
+      id="il-tuo-viaggio"
+      className="scroll-mt-30 lg:scroll-mt-30 relative w-full overflow-x-hidden bg-[#F5F0EC] pb-4 ">
       {/* sfondo morbido */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#F5F0EC]/40 via-[#F5F1ED] to-[#D9C7B4]/40" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#F5F0EC]/40 via-[#F5F1ED] to-[#D9C7B4]/10" />
 
       {/* contenuto */}
-      <div className="relative mx-auto flex max-w-6xl flex-col items-center gap-8 px-4 sm:px-6 lg:px-8">
+      <div className="relative mx-auto flex max-w-7xl flex-col items-center gap-8 px-4 sm:px-6 lg:px-8">
         {/* HEADER */}
         <div className="flex flex-col items-center gap-4 text-center">
           <p className="text-[11px] tracking-[0.22em] text-[#8B7355] uppercase">
@@ -29,7 +31,7 @@ export default function CardSection() {
         {/* CONTENITORE CARD */}
         <div className="relative z-10 flex w-full flex-col items-center gap-8 md:flex-row md:items-stretch md:justify-center">
           {/* CARD 1 */}
-          <div className="mt-12 h-full max-w-xs rounded-2xl bg-[#F3E8DE] shadow-[0_14px_35px_rgba(0,0,0,0.06)] md:my-20">
+          <div className="mt-12 h-full max-w-xs rounded-2xl bg-[#F3E8DE] shadow-[0_14px_35px_rgba(0,0,0,0.06)] md:my-20 lg:w-220">
             <div className="relative overflow-hidden rounded-t-2xl">
               <img
                 src="/yoga.jpg"
@@ -47,7 +49,7 @@ export default function CardSection() {
           </div>
 
           {/* CARD 2 */}
-          <div className="mt-8 h-full max-w-xs rounded-2xl bg-[#F3E8DE] shadow-[0_14px_35px_rgba(0,0,0,0.06)] md:mx-5 md:mt-28">
+          <div className="mt-8 h-full max-w-xs rounded-2xl bg-[#F3E8DE] shadow-[0_14px_35px_rgba(0,0,0,0.06)] md:mx-5 md:mt-28 lg:w-220">
             <div className="relative overflow-hidden rounded-t-2xl">
               <img
                 src="/meditazione.jpg"
@@ -67,7 +69,7 @@ export default function CardSection() {
           </div>
 
           {/* CARD 3 */}
-          <div className="mt-8 h-full max-w-xs rounded-2xl bg-[#F3E8DE] shadow-[0_14px_35px_rgba(0,0,0,0.06)] md:mt-40">
+          <div className="mt-8 h-full max-w-xs rounded-2xl bg-[#F3E8DE] shadow-[0_14px_35px_rgba(0,0,0,0.06)] md:mt-40 lg:w-220">
             <div className="relative overflow-hidden rounded-t-2xl">
               <img
                 src="/relax.jpg"
@@ -85,7 +87,7 @@ export default function CardSection() {
           </div>
 
           {/* CARD 4 */}
-          <div className="mt-8 h-full max-w-xs rounded-2xl bg-[#F3E8DE] shadow-[0_14px_35px_rgba(0,0,0,0.06)] md:ml-5 md:mt-32">
+          <div className="mt-8 h-full max-w-xs rounded-2xl bg-[#F3E8DE] shadow-[0_14px_35px_rgba(0,0,0,0.06)] md:ml-5 md:mt-32 lg:w-220">
             <div className="relative overflow-hidden rounded-t-2xl">
               <img
                 src="/stretching.jpg"
