@@ -8,6 +8,9 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
+const whatsappNumber = "3514858688";
+const whatsappLink = `https://wa.me/39${whatsappNumber}`;
+
 export default function Hero() {
   return (
     <div className="relative w-full bg-[#F5F1ED] text-[#3A3A3A] lg:pt-10">
@@ -51,12 +54,16 @@ export default function Hero() {
 
             <div className="flex flex-wrap gap-3 pt-2">
               <a
-                href="#lessons"
+                href={whatsappLink}
+                target="_blank"
+                rel="noreferrer"
                 className="flex items-center gap-2 border border-[#3A3A3A] px-4 py-2 text-xs font-medium uppercase tracking-[0.16em] text-[#3A3A3A] transition-all hover:-translate-y-0.5 hover:bg-[#3A3A3A] hover:text-white">
                 <span>Inizia qui</span>
               </a>
               <a
-                href="#about"
+                href={whatsappLink}
+                target="_blank"
+                rel="noreferrer"
                 className="flex items-center gap-2 text-xs font-medium uppercase tracking-[0.16em] text-[#3A3A3A] underline underline-offset-4">
                 Conosci la tua insegnante
               </a>

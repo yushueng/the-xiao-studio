@@ -18,7 +18,7 @@ const navLinks = [
   { href: "/#contatti", label: "CONTATTAMI" },
 ];
 
-const whatsappNumber = "3332858687";
+const whatsappNumber = "3514858688";
 const whatsappLink = `https://wa.me/39${whatsappNumber}`;
 
 export default function Navbar() {

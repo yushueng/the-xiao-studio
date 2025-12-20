@@ -1,7 +1,7 @@
 "use client";
 
 export default function WhatsappInviteSection() {
-  const whatsappNumber = "3332858687";
+  const whatsappNumber = "3514858688";
   const whatsappLink = `https://wa.me/39${whatsappNumber}`;
 
   return (
