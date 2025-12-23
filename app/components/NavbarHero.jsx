@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { Playfair_Display } from "next/font/google";
 
@@ -60,13 +61,11 @@ export default function Hero() {
                 className="flex items-center gap-2 border border-[#3A3A3A] px-4 py-2 text-xs font-medium uppercase tracking-[0.16em] text-[#3A3A3A] transition-all hover:-translate-y-0.5 hover:bg-[#3A3A3A] hover:text-white">
                 <span>Inizia qui</span>
               </a>
-              <a
-                href={whatsappLink}
-                target="_blank"
-                rel="noreferrer"
+              <Link
+                href="/la-mia-storia"
                 className="flex items-center gap-2 text-xs font-medium uppercase tracking-[0.16em] text-[#3A3A3A] underline underline-offset-4">
                 Conosci la tua insegnante
-              </a>
+              </Link>
             </div>
           </div>
 

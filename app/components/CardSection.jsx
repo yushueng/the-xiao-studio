@@ -2,7 +2,7 @@ export default function CardSection() {
   return (
     <section
       id="il-tuo-viaggio"
-      className="scroll-mt-30 lg:scroll-mt-30 relative w-full overflow-x-hidden bg-[#F5F0EC] pb-4 ">
+      className="scroll-mt-30 lg:scroll-mt-30 relative w-full overflow-x-hidden bg-[#F5F0EC] pb-4 lg:pb-10 ">
       {/* sfondo morbido */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#F5F0EC]/40 via-[#F5F1ED] to-[#D9C7B4]/10" />
 

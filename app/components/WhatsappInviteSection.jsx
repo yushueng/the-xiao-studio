@@ -7,19 +7,19 @@ export default function WhatsappInviteSection() {
   return (
     <section
       id="contatti"
-      className="scroll-mt-25 lg:scroll-mt-35 w-full bg-[#F5F1ED] pb-10 lg:pb-10">
+      className="scroll-mt-25 lg:scroll-mt-35 w-full bg-[#F5F1ED] lg:py-10 pb-20 lg:pb-32">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 sm:px-6 lg:flex-row lg:items-center lg:gap-10 lg:px-8">
         {/* IMMAGINE */}
         <div className="overflow-hidden rounded-3xl bg-[#E8E2DC] lg:flex-1">
           <img
             src="/thexiaostudio3.jpg"
             alt="Practice with The Xiao Studio"
-            className="h-120 sm:h-56 lg:h-150 w-full object-cover"
+            className="h-80 sm:h-96 lg:h-[500px] w-full object-cover"
           />
         </div>
 
         {/* TESTO + BOTTONE WHATSAPP */}
-        <div className="flex flex-1 flex-col items-start gap-5">
+        <div className="flex flex-1 flex-col items-start gap-5 lg:pl-8">
           <p className="text-[11px] tracking-[0.22em] text-[#8B7355] uppercase">
             Ready to reconnect
           </p>

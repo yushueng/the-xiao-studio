@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Playfair_Display } from "next/font/google";
 
 const playfair = Playfair_Display({
@@ -28,12 +29,25 @@ export default function LaMiaStoriaPage() {
           </p>
         </header>
 
-        {/* ABOUT ME */}
+        {/* ABOUT ME + FOTO */}
         <section className="grid gap-8 rounded-3xl bg-[#F3E8DE] p-6 shadow-[0_14px_35px_rgba(0,0,0,0.04)] sm:p-8 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:items-start lg:p-10">
-          <div className="space-y-4 text-sm leading-relaxed text-[#3A3A3A]/90">
+          {/* TESTO CHI SONO - SEMPRE PRIMO */}
+          <div className="space-y-4 text-sm leading-relaxed text-[#3A3A3A]/90 lg:order-1">
+            <div className="order-1 lg:order-2 relative overflow-hidden rounded-2xl bg-white/60">
+              <div className="block lg:hidden relative aspect-[4/5] w-full">
+                <Image
+                  src="/XiaoYeWu.jpg"
+                  alt="Xiao Ye Wu - Insegnante di yoga"
+                  fill
+                  priority
+                  className="object-cover"
+                />
+              </div>
+            </div>
             <p className="text-[11px] tracking-[0.22em] text-[#8B7355] uppercase">
               Chi sono
             </p>
+
             <p>
               Buongiorno, mi chiamo Xiao Ye e sono un&apos;insegnante di yoga.
               Sono una ragazza di origini cinesi, nata e cresciuta a Milano,
@@ -54,33 +68,21 @@ export default function LaMiaStoriaPage() {
             </p>
           </div>
 
-          <div className="space-y-4 rounded-2xl bg-white/60 p-5 text-sm leading-relaxed text-[#3A3A3A]/90">
-            <p className="text-[11px] tracking-[0.22em] text-[#8B7355] uppercase">
-              Formazione e insegnamento
-            </p>
-            <p>
-              Per molto tempo il sogno di formarmi come insegnante sembrava
-              lontano, sia per la distanza geografica che per motivi economici.
-              Quando finalmente si è realizzato, ha trasformato la mia visione e
-              il mio modo di stare al mondo.
-            </p>
-            <p>
-              Nello stesso anno ho completato il 200h YTTC a Ubud, Bali, e il
-              300h YTTC a Rishikesh, in India. Mi sono specializzata in Yoga
-              Vinyasa, Ashtanga e Hatha, e oggi insegno anche Yin e altre
-              tipologie.
-            </p>
-            <p>
-              Insegno privatamente 1:1 e a piccoli gruppi. Nel tempo ho imparato
-              ad adattare le lezioni a chi ho davanti: da chi inizia da zero a
-              chi pratica da anni. Le lezioni troppo rigide non riuscivano a
-              trasmettere la vera essenza dello yoga.
-            </p>
+          {/* FOTO PROFILO - SECONDA SU DESKTOP, PRIMA SU MOBILE */}
+          <div className="order-1 lg:order-2 relative overflow-hidden rounded-2xl bg-white/60">
+            <div className="hidden lg:block relative aspect-[4/5] w-full">
+              <Image
+                src="/XiaoYeWu.jpg"
+                alt="Xiao Ye Wu - Insegnante di yoga"
+                fill
+                priority
+                className="object-cover"
+              />
+            </div>
           </div>
         </section>
 
         {/* LA MIA STORIA + APPROCCIO */}
-
         <section className="grid gap-8 rounded-3xl bg-white/60 p-6 shadow-[0_14px_35px_rgba(0,0,0,0.04)] sm:p-8 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:items-start lg:p-10">
           <div className="space-y-4 text-sm leading-relaxed text-[#3A3A3A]/90">
             <p className="text-[11px] tracking-[0.22em] text-[#8B7355] uppercase">
