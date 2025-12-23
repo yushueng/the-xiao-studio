@@ -7,7 +7,7 @@ export default function WhatsappInviteSection() {
   return (
     <section
       id="contatti"
-      className="scroll-mt-25 lg:scroll-mt-35 w-full bg-[#F5F1ED] lg:py-10 pb-20 lg:pb-32">
+      className="scroll-mt-25 lg:scroll-mt-35 w-full bg-[#F5F1ED] lg:py-10 pb-10 lg:pb-32">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 sm:px-6 lg:flex-row lg:items-center lg:gap-10 lg:px-8">
         {/* IMMAGINE */}
         <div className="overflow-hidden rounded-3xl bg-[#E8E2DC] lg:flex-1">

@@ -20,6 +20,7 @@ const navLinks = [
 
 const whatsappNumber = "3514858688";
 const whatsappLink = `https://wa.me/39${whatsappNumber}`;
+const instagramLink = "https://www.instagram.com/thexiaostudio/";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -73,8 +74,28 @@ export default function Navbar() {
             ))}
           </ul>
 
-          {/* CTA DESKTOP -> WHATSAPP */}
-          <div className="hidden md:block">
+          {/* CTA DESKTOP -> WHATSAPP + INSTAGRAM */}
+          <div className="hidden md:flex items-center gap-3">
+            <a
+              href={instagramLink}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="The Xiao Studio su Instagram"
+              className="p-4 transition-all hover:scale-110 hover:rotate-12">
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#3A3A3A"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
             <a
               href={whatsappLink}
               target="_blank"
@@ -134,15 +155,54 @@ export default function Navbar() {
               ))}
             </nav>
 
-            {/* CTA MOBILE -> WHATSAPP */}
-            <a
-              href={whatsappLink}
-              target="_blank"
-              rel="noreferrer"
-              onClick={() => setMenuOpen(false)}
-              className="mt-4 w-full rounded-lg bg-[#3A3A3A] px-4 py-2.5 text-center text-xs font-medium uppercase tracking-[0.16em] text-white transition-colors hover:bg-[#8B7355]">
-              Join me on the mat
-            </a>
+            {/* CTA MOBILE -> WHATSAPP + INSTAGRAM */}
+            <div className="mt-8 space-y-4">
+              {/* WHATSAPP BUTTON - CENTRED */}
+              <div className="w-full flex justify-center">
+                <a
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={() => setMenuOpen(false)}
+                  className="w-full max-w-[200px] rounded-lg bg-[#3A3A3A] px-6 py-3 text-center text-xs font-medium uppercase tracking-[0.16em] text-white transition-colors hover:bg-[#8B7355]">
+                  Join me on the mat
+                </a>
+              </div>
+
+              {/* INSTAGRAM */}
+              <div className="flex items-center justify-center pt-4 border-t border-[#3A3A3A]/20">
+                <span className="text-xs text-[#3A3A3A]/60 tracking-[0.14em] uppercase">
+                  Seguimi su
+                </span>
+                <a
+                  href={instagramLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={() => setMenuOpen(false)}
+                  aria-label="The Xiao Studio su Instagram"
+                  className="p-3 transition-all hover:scale-110 hover:rotate-12">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#3A3A3A"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round">
+                    <rect
+                      x="2"
+                      y="2"
+                      width="20"
+                      height="20"
+                      rx="5"
+                      ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
