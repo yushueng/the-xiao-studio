@@ -37,7 +37,7 @@ export default function AboutMe() {
         <div className="flex w-full items-center order-1 lg:order-2 lg:w-[48%]">
           <div className="w-full rounded-3xl bg-[#F3E8DE] px-6 py-8 shadow-[0_14px_35px_rgba(0,0,0,0.04)] sm:px-8 sm:py-10 lg:px-10">
             <p className="text-[11px] tracking-[0.22em] text-[#8B7355] uppercase">
-              ABOUT YOUR INSTRUCTOR
+              LA TUA INSEGNANTE
             </p>
 
             <h2
@@ -46,23 +46,23 @@ export default function AboutMe() {
             </h2>
 
             <p className="mt-1 text-sm tracking-[0.16em] text-[#8B7355] uppercase">
-              Founder of The Xiao Studio
+              FOUNDER
             </p>
 
             <div className="mt-5 space-y-3 text-md leading-relaxed text-[#3A3A3A]/85">
               <p>
                 <strong>Mi chiamo Xiao Ye e sono un’insegnante di yoga.</strong>
                 <br />
-                Mi chiamo Xiao Ye e sono un’insegnante di yoga. Nata e cresciuta
-                a Milano, con origini cinesi, pratico yoga da oltre dieci anni.
-                Quello che è iniziato come movimento fisico si è trasformato in
-                uno stile di vita che unisce corpo, mente e spirito. <br /> Mi
-                sono formata come insegnante con il 200h YTTC a Ubud, Bali e il
-                300h YTTC a Rishikesh, India, specializzandomi in Vinyasa,
-                Ashtanga e Hatha Yoga. Oggi insegno lezioni private e in piccoli
-                gruppi con un approccio flessibile e personalizzato, creando
-                pratiche che aiutano a ritrovare equilibrio, forza e
-                consapevolezza, dentro e fuori dal tappetino.
+                Nata e cresciuta a Milano, con origini cinesi, pratico yoga da
+                oltre dieci anni. Quello che è iniziato come movimento fisico si
+                è trasformato in uno stile di vita che unisce corpo, mente e
+                spirito. <br /> Mi sono formata come insegnante con il 200h YTTC
+                a Ubud, Bali e il 300h YTTC a Rishikesh, India, specializzandomi
+                in Vinyasa, Ashtanga e Hatha Yoga. Oggi insegno lezioni private
+                e in piccoli gruppi con un approccio flessibile e
+                personalizzato, creando pratiche che aiutano a ritrovare
+                equilibrio, forza e consapevolezza, dentro e fuori dal
+                tappetino.
               </p>
             </div>
 

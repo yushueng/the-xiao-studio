@@ -101,7 +101,7 @@ export default function Navbar() {
               target="_blank"
               rel="noreferrer"
               className="border border-[#3A3A3A] px-4 py-2 text-[11px] font-medium uppercase tracking-[0.16em] text-[#3A3A3A] transition-all hover:bg-[#3A3A3A] hover:text-white">
-              Join me on the mat
+              PARTI DA QUI
             </a>
           </div>
 
@@ -165,7 +165,7 @@ export default function Navbar() {
                   rel="noreferrer"
                   onClick={() => setMenuOpen(false)}
                   className="w-full max-w-[200px] rounded-lg bg-[#3A3A3A] px-6 py-3 text-center text-xs font-medium uppercase tracking-[0.16em] text-white transition-colors hover:bg-[#8B7355]">
-                  Join me on the mat
+                  PARTI DA QUI
                 </a>
               </div>
 

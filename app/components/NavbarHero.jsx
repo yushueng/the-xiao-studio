@@ -22,7 +22,7 @@ export default function Hero() {
           className="scroll-mt-44 grid gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:items-center">
           <div className="space-y-6">
             <p className="text-xs tracking-[0.22em] text-[#8B7355] uppercase">
-              ONLINE &amp; IN-PERSON YOGA STUDIO
+              ONLINE &amp; IN PRESENZA
             </p>
             <h1
               className={`${playfair.className} text-4xl leading-[1.02] text-[#3A3A3A] sm:text-5xl md:text-6xl`}>

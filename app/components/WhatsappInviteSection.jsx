@@ -21,12 +21,13 @@ export default function WhatsappInviteSection() {
         {/* TESTO + BOTTONE WHATSAPP */}
         <div className="flex flex-1 flex-col items-start gap-5 lg:pl-8">
           <p className="text-[11px] tracking-[0.22em] text-[#8B7355] uppercase">
-            Ready to reconnect
+            Rimaniamo in contatto
           </p>
 
           <h2 className="text-2xl font-semibold tracking-[0.12em] text-[#3A3A3A] sm:text-3xl md:text-4xl uppercase">
-            Pronta a ritrovarti
-            <br className="hidden sm:block" /> sul tappetino?
+            Il tuo spazio
+            <br className="hidden sm:block" /> per ritrovare equilibrio e
+            presenza
           </h2>
 
           <p className="max-w-xl text-sm leading-relaxed text-[#3A3A3A]/85">
@@ -45,6 +46,14 @@ export default function WhatsappInviteSection() {
             rel="noreferrer"
             className="mt-2 inline-flex items-center gap-2 rounded-full bg-[#3A3A3A] px-7 py-3 text-xs font-medium uppercase tracking-[0.18em] text-white transition-all hover:bg-[#8B7355]">
             Scrivimi su WhatsApp
+            <span className="text-sm">↗</span>
+          </a>
+          <a
+            href="mailto:info@thexiaostudio.com"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-2 inline-flex items-center gap-2 rounded-full bg-[#3A3A3A] px-7 py-3 text-xs font-medium uppercase tracking-[0.18em] text-white transition-all hover:bg-[#8B7355]">
+            Scrivimi un’email
             <span className="text-sm">↗</span>
           </a>
         </div>

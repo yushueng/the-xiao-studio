@@ -10,22 +10,17 @@ export default function CardSection() {
       <div className="relative mx-auto flex max-w-7xl flex-col items-center gap-8 px-4 sm:px-6 lg:px-8">
         {/* HEADER */}
         <div className="flex flex-col items-center gap-4 text-center">
-          <p className="text-[11px] tracking-[0.22em] text-[#8B7355] uppercase">
+          <p className="text-[13px] tracking-[0.22em] text-[#8B7355] uppercase">
             Cosa troverai
           </p>
           <h2 className="text-2xl font-semibold tracking-[0.12em] text-[#3A3A3A] sm:text-3xl uppercase">
             Inizia il tuo viaggio
           </h2>
-          <p className="max-w-2xl text-sm leading-relaxed text-[#3A3A3A]/80">
+          <p className="max-w-2xl text-md leading-relaxed text-[#3A3A3A]/80">
             Una selezione di percorsi pensati per accompagnarti nel movimento,
             nel respiro e nel rilassamento, qualunque sia il tuo punto di
             partenza.
           </p>
-          <button
-            type="button"
-            className="mt-2 rounded-full border border-[#3A3A3A] px-6 py-2 text-[11px] font-medium uppercase tracking-[0.16em] text-[#3A3A3A] transition-all hover:-translate-y-0.5 hover:bg-[#3A3A3A] hover:text-white">
-            Vedi i percorsi
-          </button>
         </div>
 
         {/* CONTENITORE CARD */}
@@ -59,7 +54,7 @@ export default function CardSection() {
             </div>
             <div className="space-y-2 p-4">
               <h3 className="text-lg font-semibold text-[#3A3A3A]">
-                Meditazione
+                Meditazione &amp; Pranayama
               </h3>
               <p className="text-sm leading-relaxed text-[#3A3A3A]/85">
                 Sessioni guidate per rallentare, osservare i pensieri e trovare
@@ -78,7 +73,9 @@ export default function CardSection() {
               />
             </div>
             <div className="space-y-2 p-4">
-              <h3 className="text-lg font-semibold text-[#3A3A3A]">Relax</h3>
+              <h3 className="text-lg font-semibold text-[#3A3A3A]">
+                Pilates Matwork
+              </h3>
               <p className="text-sm leading-relaxed text-[#3A3A3A]/85">
                 Pratiche dolci, Yin e rilassamento guidato per sciogliere
                 tensioni, ritrovare leggerezza e riposare davvero.
